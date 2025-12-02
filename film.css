@@ -1,0 +1,272 @@
+/* ------------------------------------------------------------
+   film.css — Fiche Film (complet)
+   HERO full-bleed + contenu centré + synopsis aligné à gauche
+------------------------------------------------------------ */
+
+/* ------------------------------------------------------------
+   HERO FILM
+------------------------------------------------------------ */
+.hero-film {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    min-height: 380px;
+    max-height: 750px;
+    overflow: hidden;
+}
+
+.hero-film-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-film-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0.1));
+    pointer-events: none;
+}
+
+.hero-film-content {
+    position: absolute;
+    bottom: 40px;
+    left: 5vw;
+    z-index: 3;
+    color: #fff;
+    max-width: 60%;
+}
+
+.hero-film-content h1 {
+    font-size: clamp(24px, 4vw, 46px);
+    font-weight: 700;
+    margin: 0 0 6px 0;
+}
+
+.hero-film-content .director {
+    margin-top: 6px;
+    font-size: 16px;
+    opacity: 0.9;
+    color: rgba(255,255,255,0.9);
+}
+
+.hero-film-content .buttons {
+    margin-top: 18px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-film-content button {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    padding: 10px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .15s, transform .12s;
+}
+
+.hero-film-content button:hover {
+    background: rgba(255,255,255,0.16);
+    transform: translateY(-2px);
+}
+
+/* ------------------------------------------------------------
+   SYNOPSIS + INFORMATIONS (2 colonnes)
+   Section under the hero; centered max-width container
+------------------------------------------------------------ */
+
+.film-two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.film-column {
+    box-sizing: border-box;
+}
+
+/* Titles and text */
+.film-column h2 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.film-column p,
+.film-column span {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d6d6e2;
+    margin: 0 0 12px 0;
+}
+
+/* info grid inside infos */
+.info-grid {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+/* visual vertical divider moved to right column via border */
+.film-infos {
+    padding-left: 30px;
+    border-left: 1px solid rgba(255,255,255,0.12);
+}
+
+/* ------------------------------------------------------------
+   CAROUSELS
+------------------------------------------------------------ */
+
+.carousel-section {
+    margin: 36px 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-section h2 {
+    margin: 0 0 12px 20px;
+    font-size: 1.15rem;
+    color: #fff;
+}
+
+.carousel-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 8px 20px;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.carousel-track::-webkit-scrollbar { height: 8px; }
+
+.carousel-item {
+    min-width: 150px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #2a2b3a;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.45);
+}
+
+.carousel-item p {
+    margin-top: 8px;
+    font-size: 0.88rem;
+    color: #bfc2d1;
+}
+
+/* carousel control buttons */
+.carousel-btn {
+    background: rgba(255,255,255,0.04);
+    color: #fff;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:hover {
+    background: rgba(255,255,255,0.12);
+    transform: translateY(-2px);
+}
+
+/* ------------------------------------------------------------
+   RESPONSIVE
+------------------------------------------------------------ */
+
+@media (max-width: 1100px) {
+    .hero-film-content { max-width: 70%; left: 4vw; }
+    .film-two-columns { gap: 28px; padding: 32px 18px; }
+    .carousel-item img { height: 200px; width: 140px; }
+}
+
+@media (max-width: 900px) {
+    .hero-film { height: 55vh; min-height: 240px; }
+    .hero-film-content { bottom: 26px; left: 4vw; max-width: 78%; }
+    .film-two-columns {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 26px 16px;
+    }
+    .film-infos {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid rgba(255,255,255,0.08);
+        padding-top: 14px;
+    }
+    .carousel-item img { height: 170px; width: 120px; }
+}
+
+@media (max-width: 600px) {
+    .hero-film { height: 44vh; min-height: 180px; }
+    .hero-film-content h1 { font-size: 20px; }
+    .carousel-item img { height: 150px; width: 110px; }
+}
+
+/* ------------------------------------------------------------
+   ALIGNEMENT SYNOPSIS À GAUCHE - règle spécifique et prioritaire
+   (suffisamment spécifique pour écraser les règles globales)
+------------------------------------------------------------ */
+
+/* Assure l'alignement à gauche du texte dans la colonne synopsis */
+.film-two-columns .film-column,
+.film-two-columns .film-column p,
+.film-two-columns .film-column span,
+.film-two-columns .film-column h2 {
+    text-align: left !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* Petite marge interne si un ancien style injecte padding centré */
+.film-two-columns .film-column { padding: 0 !important; }
+
+/* ------------------------------------------------------------
+   Sécurité : neutralise les règles externes trop contraignantes
+   (placées en dernier pour s'assurer qu'elles prennent effet)
+------------------------------------------------------------ */
+
+.hero-film,
+.film-two-columns,
+.carousel-section,
+.carousel-track {
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Debug helpers (désactiver en production)
+   .film-column { outline: 1px dashed rgba(255,255,255,0.03); }
+   .hero-film { outline: 1px dashed rgba(255,0,0,0.06); }
+*/

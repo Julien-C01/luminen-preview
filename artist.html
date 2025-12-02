@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clive Owen</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="artist.css">
+</head>
+
+<body>
+
+<!-- ------------------------------------------------------------
+         NAVBAR GLOBALE
+    ------------------------------------------------------------ -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">Luminen</div>
+
+            <nav class="menu">
+                <a href="#">Films</a>
+                <a href="#">Séries</a>
+                <a href="#">Émissions</a>
+                <a href="#">Catalogue</a>
+
+                <!-- Recherche -->
+                <a href="#" class="search-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                         stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="9" r="6"></circle>
+                        <line x1="14" y1="14" x2="19" y2="19"></line>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+
+        <div class="header-right">
+            <a href="#" class="account-link">Mon Espace</a>
+        </div>
+    </header>
+
+
+
+    <!-- SECTION ARTISTE -->
+    <main class="artist-container">
+
+        <!-- PHOTO + BIO À DROITE -->
+        <div class="artist-header">
+
+            <div class="artist-photo">
+                <img src="images/clive_owen.jpg" alt="Clive Owen">
+            </div>
+
+            <div class="artist-bio">
+                <h1>Clive Owen</h1>
+
+                <h2>Biographie</h2>
+                <p>
+                    Clive Owen est né le 3 octobre 1964 à Coventry, en Angleterre. Il a rejoint le théâtre à 13 ans après avoir joué le rôle de l'Artful Dodger dans une production d'« Oliver ! ». Il a été accepté à la Royal Academy of Dramatic Art en 1984. Après avoir obtenu son diplôme, il rejoint le Young Vic Theatre.
+                    <br><br>
+                    En 1988, il débute à la télévision, dans les téléfilms de la BBC, "Precious Bane", et de Channel 4, "Vroom". Dans les années 1990, il participe à plusieurs productions, notamment "Chancer", une série télévisée de ITV diffusée de 1990 à 1991.
+                    <br><br>
+                    Après des premier rôle dans de petits films ("Croupier", "Jardinage à l'anglaise") et des seconds rôles dans des films à plus gros budget ("Gosford Park", "La Mémoire dans la peau"), sa carrière prend de l'ampleur avec son rôle dans "Closer, entre adultes consentants" pour lequel il est nommé aux Oscars et gagne le Golden Globe du meilleur second rôle.
+                    <br><br>
+                    Il obtiendra une nouvelle nomination aux Golden Globes en tant que meilleur acteur dans la série créé par Steven Soderbergh, "The Knick". En 2016, il fait partie des membres du jury de la Compétition officielle du 66e Festival international du film de Berlin.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- FILMOGRAPHIE -->
+    <section class="carousel-section">
+        <h2>Années 2010</h2>
+
+        <div class="carousel-row">
+
+            <button class="carousel-btn left"
+                onclick="this.nextElementSibling.scrollBy({left:-400, behavior:'smooth'})">
+            &#10094;
+            </button>
+
+            <div class="carousel-track">
+
+                    <div class="carousel-item">
+                    <img src="images/Gemini Man.jpg" alt="">
+                    <p>Gemini Man</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/Valérian et la Cité des mille planètes.jpg" alt="">
+                    <p>Valérian et la Cité des mille planètes</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/Intruders.jpg" alt="">
+                    <p>Intruders</p>
+                </div>
+
+            </div>
+
+            <button class="carousel-btn right"
+                onclick="this.previousElementSibling.scrollBy({left:400, behavior:'smooth'})">
+            &#10095;
+            </button>
+
+        </div>
+    </section>
+    <section class="carousel-section">
+        <h2>Années 2000</h2>
+
+        <div class="carousel-row">
+
+            <button class="carousel-btn left"
+                onclick="this.nextElementSibling.scrollBy({left:-400, behavior:'smooth'})">
+            &#10094;
+            </button>
+
+            <div class="carousel-track">
+
+                    <div class="carousel-item">
+                    <img src="images/Duplicity.jpg" alt="">
+                    <p>Duplicity</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/L'Enquête.jpg" alt="">
+                    <p>L'Enquête</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/Elizabeth - l'âge d'or.jpg" alt="">
+                    <p>Elizabeth - l'âge d'or/p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/les_fils_de_l_homme_1.jpg" alt="">
+                    <p>Les Fils de l'homme</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/Inside Man - l'homme de l'intérieur.jpg" alt="">
+                    <p>Inside Man - l'homme de l'intérieur</p>
+                </div>
+
+            </div>
+
+            <button class="carousel-btn right"
+                onclick="this.previousElementSibling.scrollBy({left:400, behavior:'smooth'})">
+            &#10095;
+            </button>
+
+        </div>
+    </section>
+    </main>
+
+</body>
+</html>

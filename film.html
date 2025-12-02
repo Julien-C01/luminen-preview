@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Fils de l'homme</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="film.css">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+</head>
+<body>
+
+    <!-- NAVBAR GLOBALE -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">Luminen</div>
+
+            <nav class="menu">
+                <a href="#">Films</a>
+                <a href="#">Séries</a>
+                <a href="#">Émissions</a>
+                <a href="#">Catalogue</a>
+
+                <a href="#" class="search-icon">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="9" r="7"></circle>
+                        <line x1="14" y1="14" x2="19" y2="19"></line>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+
+        <div class="header-right">
+            <a href="#" class="account-link">Mon espace</a>
+        </div>
+    </header>
+
+
+
+    <!-- HERO HEADER -->
+    <section class="hero-film">
+        <img src="images/children-of-men.jpg" alt="Les Fils de l'homme" class="hero-film-img">
+
+        <div class="hero-film-overlay"></div>
+
+        <div class="hero-film-content">
+            <h1>Les Fils de l'homme</h1>
+            <p class="director">De Alfonso Cuarón</p>
+
+            <div class="buttons">
+                <button>Location</button>
+                <button>Achat</button>
+                <button>Bande-annonce</button>
+                <button>Ajouter à ma liste</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SYNOPSIS + INFORMATIONS côte à côte -->
+    <main class="film-two-columns">
+
+        <!-- COLONNE GAUCHE -->
+        <section class="film-column">
+            <h2>Synopsis</h2>
+            <p>
+                Dans une société futuriste où les êtres humains ne parviennent plus à se reproduire, l'annonce de la mort de la plus jeune personne, âgée de 18 ans, met la population en émoi. Au même moment, une femme tombe enceinte - un fait qui ne s'est pas produit depuis une vingtaine d'années - et devient par la même occasion la personne la plus enviée et la plus recherchée de la Terre. Un homme est chargé de sa protection...
+            </p>
+        </section>
+
+        <!-- COLONNE DROITE -->
+        <section class="film-column film-infos">
+            <h2>Informations</h2>
+
+            <div class="info-grid">
+                <div>
+                    <p><span>Titre original :</span> Children of Men</p>
+                    <p><span>Durée :</span> 1h40</p>
+                    <p><span>Date de sortie :</span> 5 octobre 2006</p>
+                    <p><span>Genre :</span> Thriller / Science-fiction</p>
+                    <p><span>Pays :</span> États-Unis / Royaume-Uni / Japon</p>
+                    <p><span>Classe :</span> Interdit aux moins de 12 ans</p>
+                </div>
+
+                <div>
+                    <p><span>Audio :</span> Allemand / Anglais / Espagnol / Français / Italien</p>
+                    <p><span>Sous-titres :</span> Allemand / Chinois / Coréen / Espagnol / Français / Grec / Italien / Néerlandais / Portugais</p>
+                    <p><span>Qualité vidéo :</span> HD</p>
+                    <p><span>Qualité audio :</span> Dolby Digital / DTS</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- CASTING -->
+    <section class="carousel-section">
+        <h2>Casting</h2>
+
+        <div class="carousel-row">
+            <button class="carousel-btn left"
+                onclick="this.nextElementSibling.scrollBy({left:-400,behavior:'smooth'})">&#10094;</button>
+
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <img src="images/Alfonso Cuaron.jpg"><p>Alfonso Cuarón</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/clive_owen.jpg"><p>Clive Owen</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Julianne Moore.jpg"><p>Julianne Moore</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Clare-Hope Ashitey.jpg"><p>Clare-Hope Ashitey</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Chiwetel Ejiofor.jpg"><p>Chiwetel Ejiofor</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Michael Caine.jpg"><p>Michael Caine</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Charlie Hunnam.jpg"><p>Charlie Hunnam</p>
+                </div>
+            </div>
+
+            <button class="carousel-btn right"
+                onclick="this.previousElementSibling.scrollBy({left:400,behavior:'smooth'})">&#10095;</button>
+        </div>
+    </section>
+
+
+
+    <!-- BONUS -->
+    <section class="carousel-section">
+        <h2>Bonus</h2>
+
+        <div class="carousel-row">
+            <button class="carousel-btn left"
+                onclick="this.nextElementSibling.scrollBy({left:-400,behavior:'smooth'})">&#10094;</button>
+
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <img src="universal_pictures/Ex Machina.jpg"><p>Ex Machina</p>
+                </div>
+                <div class="carousel-item"><img src="affiches/film1.jpg"><p>Archives</p></div>
+                <div class="carousel-item"><img src="affiches/film1.jpg"><p>Archives</p></div>
+                <div class="carousel-item"><img src="affiches/film1.jpg"><p>Archives</p></div>
+                <div class="carousel-item"><img src="affiches/film1.jpg"><p>Archives</p></div>
+            </div>
+
+            <button class="carousel-btn right"
+                onclick="this.previousElementSibling.scrollBy({left:400,behavior:'smooth'})">&#10095;</button>
+        </div>
+    </section>
+
+
+
+    <!-- RECOMMANDATIONS -->
+    <section class="carousel-section">
+        <h2>Recommandations</h2>
+
+        <div class="carousel-row">
+            <button class="carousel-btn left"
+                onclick="this.nextElementSibling.scrollBy({left:-400,behavior:'smooth'})">&#10094;</button>
+
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <img src="universal_pictures/Ex Machina.jpg"><p>Ex Machina</p>
+                </div>
+                <div class="carousel-item"><img src="affiches/film1.jpg"><p>Archives</p></div>
+                <div class="carousel-item"><img src="affiches/film1.jpg"><p>Archives</p></div>
+                <div class="carousel-item"><img src="affiches/film1.jpg"><p>Archives</p></div>
+                <div class="carousel-item"><img src="affiches/film1.jpg"><p>Archives</p></div>
+            </div>
+
+            <button class="carousel-btn right"
+                onclick="this.previousElementSibling.scrollBy({left:400,behavior:'smooth'})">&#10095;</button>
+        </div>
+    </section>
+
+</body>
+</html>

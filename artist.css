@@ -1,0 +1,78 @@
+/* ------------------------------------------------------------
+   LAYOUT GLOBAL ARTISTE
+------------------------------------------------------------ */
+
+.artist-container {
+    max-width: var(--container);
+    margin: 40px auto;
+    padding: 0 20px;
+
+    /* EMPÊCHE LE CENTRAGE VISUEL */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* PHOTO + BIO EN LIGNE */
+.artist-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; /* ALIGNER À GAUCHE */
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* PHOTO */
+.artist-photo img {
+    width: 260px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+/* BIO */
+.artist-bio {
+    flex: 1;
+    text-align: left; /* FORÇAGE ALIGNEMENT */
+}
+
+.artist-bio h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.artist-bio h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--muted);
+}
+
+.artist-bio p {
+    line-height: 1.6;
+    color: #d5d5df;
+}
+
+/* ------------------------------------------------------------
+   FILMOGRAPHIE
+------------------------------------------------------------ */
+
+.artist-filmo {
+    width: 100%;
+}
+
+.artist-filmo h2 {
+    color: var(--text);
+    margin-bottom: 16px;
+    padding-left: 0;
+    text-align: left;
+}
+
+/* 🟦 REDIMENSIONNER LES POSTERS DE FILMOGRAPHIE */
+.artist-filmo .carousel-track img {
+    width: 150px;       /* taille standard affiches */
+    height: 225px;      /* ratio 2:3 */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.5);
+}

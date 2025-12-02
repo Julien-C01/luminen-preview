@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Espace</title>
+
+    <!-- NAVBAR + BASE GLOBAL -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ------------------------------------------------------------
+         NAVBAR GLOBALE
+    ------------------------------------------------------------ -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">Luminen</div>
+
+            <nav class="menu">
+                <a href="#">Films</a>
+                <a href="#">Séries</a>
+                <a href="#">Émissions</a>
+                <a href="#">Catalogue</a>
+
+                <!-- Recherche -->
+                <a href="#" class="search-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                         stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="9" r="6"></circle>
+                        <line x1="14" y1="14" x2="19" y2="19"></line>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+
+        <div class="header-right">
+            <a href="#" class="account-link">Mon Espace</a>
+        </div>
+    </header>
+
+
+    <!-- CONTENU -->
+    <main class="account-container">
+
+        <!-- SECTION 1 — PROFIL -->
+        <section class="account-section">
+            <h1 class="account-title">Bonjour Julien</h1>
+
+            <div class="account-card">
+                <div class="info-row">
+                    <div class="label">Films achetés :</div>
+                    <div class="value">20</div>
+                </div>
+
+                <div class="info-row">
+                    <div class="label">Séries achetées :</div>
+                    <div class="value">0</div>
+                </div>
+
+                <div class="info-row">
+                    <div class="label">Réseaux culturels :</div>
+                    <div class="value">
+                        <a href="#" class="ext-link">Letterboxd</a> • 
+                        <a href="#" class="ext-link">SensCritique</a>
+                    </div>
+                </div>
+
+                <button class="btn-outline">Ma liste d'envies</button>
+            </div>
+        </section>
+
+
+        <!-- SECTION 2 — LISTES CRÉÉES PAR L’UTILISATEUR -->
+        <section class="account-section">
+            <h2>Mes listes</h2>
+
+            <div class="lists-grid">
+                <div class="list-card">Top 10 Science-fiction</div>
+                <div class="list-card">Films à voir</div>
+                <div class="list-card">Mes classiques</div>
+                <div class="list-card">Réalisateurs préférés</div>
+            </div>
+        </section>
+
+
+        <!-- SECTION 3 — FILMS ACHETÉS -->
+        <section class="account-section">
+            <h2>Mes Films - Mes Séries</h2>
+
+            <div class="purchased-grid">
+
+                <div class="movie-thumb">
+                    <img src="affiches/film1.jpg" alt="">
+                    <p>Avatar</p>
+                </div>
+
+                <div class="movie-thumb">
+                    <img src="affiches/film2.jpg" alt="">
+                    <p>Children of Men</p>
+                </div>
+
+                <div class="movie-thumb">
+                    <img src="affiches/film3.jpg" alt="">
+                    <p>Dune</p>
+                </div>
+
+                <div class="movie-thumb">
+                    <img src="affiches/film4.jpg" alt="">
+                    <p>Ex Machina</p>
+                </div>
+
+                <!-- Ajoute autant de films que nécessaire -->
+
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
