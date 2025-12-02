@@ -389,3 +389,20 @@ section,
   .logo { font-size: 20px; }
   .hero-home { height: 50vh; }
 }
+
+a {
+    color: inherit;          /* hérite de la couleur du texte environnant */
+    text-decoration: none;   /* retire le soulignement (optionnel) */
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;          /* garde la même couleur au survol */
+}
+
+a:active {
+    color: inherit;
+}
